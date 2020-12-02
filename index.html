@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='author' content=`Daniel Nijdl'>
+<meta name='description' content=''>
+<meta name='Viewport'content='width=device-width, initial-scale=1.0'>
+<meta property='og:image' content=''type='image/x-icon'>
+<meta property='og:description' content='My'>
+<meta property='og:title' content=''>
+<title>Tic Tac Toe</title>
+<link rel='stylesheet' href='style.css'>
+<link rel ='shortcut icon' href='iconthingpng.png' type='image/x-icon'>
+</head>
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+<main>
+    <div class="info">
+        <p id="player">Player: X</p>
+        <p id="playerTurn">Turn: 0</p>
+    </div>
+
+    <!-- Tic-Tac-Toe Board -->
+    <div class="gameBoard">
+        <div onclick="chooseSpot('11')" class="button11 11 buttons" id="button11">
+        </div>
+        <div onclick="chooseSpot('12')" class="button12 12 buttons" id="button12">
+        </div>
+        <div onclick="chooseSpot('13')" class="button13 13 buttons" id="button13">
+        </div>
+
+        <div onclick="chooseSpot('21')" class="button21 21 buttons" id="button21">
+        </div>
+        <div onclick="chooseSpot('22')" class="button22 22 buttons" id="button22">
+        </div>
+        <div onclick="chooseSpot('23')" class="button23 23 buttons" id="button23">
+        </div>
+
+        <div onclick="chooseSpot('31')" class="button31 31 buttons" id="button31">
+        </div>
+        <div onclick="chooseSpot('32')" class="button32 32 buttons" id="button32">
+        </div>
+        <div onclick="chooseSpot('33')" class="button33 33 buttons" id="button33">
+        </div>
+    </div>
+
+
+
+<!-- ScoreBoard: Keeps Track of wins -->
+<div class="scoreBoard">
+    <h5>wins</h5>
+    <p class="xWins">X - 0 wins</p>
+    <p class="oWins">O - 0 wins</p>
+</div>
+
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
