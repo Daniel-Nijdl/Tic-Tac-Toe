@@ -123,9 +123,9 @@ function checkIfWon (){
 
 // Bottom 3 Hortizontal
     if(buttons[6].classList.contains("filledX") && buttons[7].classList.contains("filledX") && buttons[8].classList.contains("filledX") ){
+        buttons[6].classList.add("winspot");
         buttons[7].classList.add("winspot");
         buttons[8].classList.add("winspot");
-        buttons[9].classList.add("winspot");
         winner("X");
         return;
     }
@@ -174,18 +174,18 @@ function checkIfWon (){
     if (playerTurn == 9){
         document.getElementById("player").textContent = "Draw";
     }
-    isPlaying = false;
 }
 
 function winner(winner){
     document.getElementById("player").textContent = "Winner"
     document.getElementByClassName("button");
-    if(winner == "X"){
-        xWins++;
-        document.getElementById("oWins").textContent = `X - ${xWins} wins`;
-    }else if(winner == O){
+    if(winner == "O"){
         oWins++;
-        document.getElementById("xWins").textContent = `O - ${oWins} wins`
+        document.getElementById("oWins").textContent = `O - ${oWins} wins`;
+    }else if(winner == "X"){
+        xWins++;
+        document.getElementById("xWins").textContent = `X - ${xWins} wins`
     }
+	isPlaying = false
     }
 
