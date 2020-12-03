@@ -178,7 +178,7 @@ function checkIfWon (){
 
 function winner(winner){
     document.getElementById("player").textContent = "Winner"
-    document.getElementByClassName("button");
+    document.getElementsByClassName("button");
     if(winner == "O"){
         oWins++;
         document.getElementById("oWins").textContent = `O - ${oWins} wins`;
@@ -189,3 +189,11 @@ function winner(winner){
 	isPlaying = false
     }
 
+    let reset = () => {
+        playerTurn = 0;
+        xWins = 0;
+        oWins = 0;
+        player = "X";
+        isPlaying = true
+
+        }
