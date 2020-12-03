@@ -196,6 +196,5 @@ function winner(winner){
         oWins = 0;
         player = "X";
         isPlaying = true
-        
 
         }
