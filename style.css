@@ -147,3 +147,17 @@ header h1{
     font-size: 6rem;
     color: red;
 }
+
+.resetButton{
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px 75px 75px 75px;
+    grid-template-areas: ". . . resetButton . . .";
+}
+
+.resetButton #resetButton{
+    width: 75px;
+    border-radius: .5rem;
+    outline: none;
+    align-content: center;
+    justify-items: center;
+}
