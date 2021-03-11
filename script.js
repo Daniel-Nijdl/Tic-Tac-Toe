@@ -5,6 +5,7 @@ let xWins = 0;
 let oWins = 0;
 let player = "X";
 let isPlaying = true
+document.getElementsByClassName("gameBoard")[0].style.cursor = "url('images/xCursor.png'), auto";
 
 
 let buttons = [document.getElementById(`button11`), document.getElementById(`button12`), document.getElementById(`button13`), document.getElementById(`button21`), document.getElementById(`button22`), document.getElementById(`button23`), document.getElementById(`button31`), document.getElementById(`button32`), document.getElementById(`button33`)]
@@ -25,9 +26,12 @@ function chooseSpot(spot) {
     if (player == "X") {
         player = "O";
         document.getElementById("player").textContent = "Player: O";
+        document.getElementsByClassName("gameBoard")[0].style.cursor = "url('images/cursorO2.png'), auto";
+
     } else {
         player = "X";
         document.getElementById("player").textContent = "Player: X";
+        document.getElementsByClassName("gameBoard")[0].style.cursor = "url('images/xCursor.png'), auto";
     }
 
     playerTurn++;
