@@ -26,12 +26,12 @@ function chooseSpot(spot) {
     if (player == "X") {
         player = "O";
         document.getElementById("player").textContent = "Player: O";
-        document.getElementsByClassName("gameBoard")[0].style.cursor = "url('images/cursorO2.png'), auto";
+        document.getElementsByClassName("gameBoard").style.cursor = "url('images/cursorO2.png'), auto";
 
     } else {
         player = "X";
         document.getElementById("player").textContent = "Player: X";
-        document.getElementsByClassName("gameBoard")[0].style.cursor = "url('images/xCursor.png'), auto";
+        document.getElementsByClassName("gameBoard").style.cursor = "url('images/xCursor.png'), auto";
     }
 
     playerTurn++;
