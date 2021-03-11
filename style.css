@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-::root{}
+/* ::root{} */
 
 /* body{
     min-height: 100vh;
@@ -157,7 +157,20 @@ h5{
 
 .buttons{
     font-size: 6rem;
-    color: red;
+    text-align: center;
+}
+
+.filledX{
+    padding-top: 40px;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+}
+
+.filledO{
+    padding-top: 40px;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-transform: capitalize;
 }
 
 .resetButton{
