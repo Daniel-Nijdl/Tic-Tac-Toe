@@ -198,7 +198,7 @@ function reset() {
     for (let i = 0; i < 9; i++) {
         document.getElementsByClassName("buttons")[i].textContent = "";
         document.getElementsByClassName("buttons")[i].classList.remove("winSpot");
-        
+
     }
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].textContent = "";
@@ -211,4 +211,5 @@ function reset() {
     isPlaying = true
     document.getElementById("player").textContent = `Player: ${player}`;
     document.getElementById("player").textContent = `Turn: ${playerTurn}`;
+    document.getElementsByClassName("gameBoard")[0].style.cursor = "url('images/xCursor.png'), auto";
 }
