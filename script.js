@@ -198,11 +198,13 @@ function reset() {
     for (let i = 0; i < 9; i++) {
         document.getElementsByClassName("buttons")[i].textContent = "";
         document.getElementsByClassName("buttons")[i].classList.remove("winSpot");
+        
     }
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].textContent = "";
         buttons[i].classList.remove("filledX");
         buttons[i].classList.remove("filledO");
+
     }
     playerTurn = 0;
     player = "X";
